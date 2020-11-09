@@ -1,0 +1,72 @@
+#' @title Student Grade Prediction
+#'
+#' @description
+#' Student math achievement in secondary education of two Portuguese schools
+#' 
+#' @note
+#' While the original data source provides grades in both Mathematics
+#' and Portuguese, this dataset is bases on math scores alone.
+#' 
+#' @details 
+#' This data approach student achievement in secondary education of 
+#' two Portuguese schools. The data attributes include student grades, 
+#' demographic, social and school related features) and it was collected 
+#' by using school reports and questionnaires. This dataset provides 
+#' regarding the performance in Mathematics. Important note: the target attribute G3 has a 
+#' strong correlation with attributes G2 and G1. This occurs because 
+#' G3 is the final year grade (issued at the 3rd period), while G1 and 
+#' G2 correspond to the 1st and 2nd period grades. It is more difficult 
+#' to predict G3 without G2 and G1, but such prediction is much more 
+#' useful (see paper source for more details).
+#' @source 
+#' Data obtained from 
+#' \href{https://archive.ics.uci.edu/ml/datasets/student+performance}{UCI Machine Learning Repository}. 
+#' 
+#' Original source: Paulo Cortez, University of Minho, GuimarÃ£es, Portugal, \url{http://www3.dsi.uminho.pt/pcortez}
+#' 
+#' Please include this citations when using the data:
+#' P. Cortez and A. Silva. Using Data Mining to Predict Secondary 
+#' School Student Performance. In A. Brito and J. Teixeira Eds., 
+#' Proceedings of 5th FUture BUsiness TEChnology Conference (FUBUTEC 2008) 
+#' pp. 5-12, Porto, Portugal, April, 2008, EUROSIS, ISBN 978-9077381-39-7.
+#' \href{http://www3.dsi.uminho.pt/pcortez/student.pdf}{Web Link}.
+#' 
+#' @format A data frame with 395 rows and 33 variables:
+#' \describe{
+#'   \item{\code{school}}{factor. student's school ('Gabriel Pereira' or 'Mousinho da Silveira').}
+#'   \item{\code{sex}}{factor. student's sex ('Female' or 'Male').}
+#'   \item{\code{age}}{integer. student's age (numeric: from 15 to 22).}
+#'   \item{\code{address}}{factor. student's home address type ('Urban' or 'Rural').}
+#'   \item{\code{famsize}}{factor. family size (binary: 'Less or equal to 3' or 'Greater than 3').}
+#'   \item{\code{Pstatus}}{factor.  parent's cohabitation status ('Living together' or 'Living apart').}
+#'   \item{\code{Medu}}{ordered factor. mother's education ('primary education (4th grade)', '5th to 9th grade', 'secondary education' or 'higher education').}
+#'   \item{\code{Fedu}}{ordered factor. father's education ('primary education (4th grade)', '5th to 9th grade', 'secondary education' or 'higher education').}
+#'   \item{\code{Mjob}}{factor. mother's job ('teacher', 'health' care related, civil 'services' (e.g. administrative or police), 'at_home' or 'other').}
+#'   \item{\code{Fjob}}{factor.  father's job ('teacher', 'health' care related, civil 'services' (e.g. administrative or police), 'at_home' or 'other').}
+#'   \item{\code{reason}}{factor. reason to choose this school (close to 'home', school 'reputation', 'course' preference or 'other').}
+#'   \item{\code{guardian}}{factor. student's guardian ('mother', 'father' or 'other').}
+#'   \item{\code{traveltime}}{ordered factor. home to school travel time ('1 - <15 min.', '15 to 30 min.', 30 min. to 1 hour', or '4 - >1 hour').}
+#'   \item{\code{studytime}}{ordered factor. weekly study time ('<2 hours', '2 to 5 hours', '5 to 10 hours', or '>10 hours').}
+#'   \item{\code{failures}}{integer. number of past class failures (numeric: n if 1<=n<3, else 4).}
+#'   \item{\code{schoolsup}}{factor. extra educational support ('yes' or 'no').}
+#'   \item{\code{famsup}}{factor. family educational support ('yes' or 'no').}
+#'   \item{\code{paid}}{factor. extra paid classes within the course subject (Math) ('yes' or 'no').}
+#'   \item{\code{activities}}{factor. extra-curricular activities ('yes' or 'no').}
+#'   \item{\code{nursery}}{factor. attended nursery school ('yes' or 'no').}
+#'   \item{\code{higher}}{factor. wants to take higher education ('yes' or 'no').}
+#'   \item{\code{internet}}{factor. Internet access at home ('yes' or 'no').}
+#'   \item{\code{romantic}}{factor. with a romantic relationship ('yes' or 'no').}
+#'   \item{\code{famrel}}{integer. quality of family relationships (from 1 - very bad to 5 - excellent).}
+#'   \item{\code{freetime}}{integer. free time after school (from 1 - very low to 5 - very high).}
+#'   \item{\code{goout}}{integer. going out with friends (from 1 - very low to 5 - very high).}
+#'   \item{\code{Dalc}}{integer. workday alcohol consumption (1 - very low to 5 - very high).}
+#'   \item{\code{Walc}}{integer. weekend alcohol consumption (from 1 - very low to 5 - very high).}
+#'   \item{\code{health}}{integer. current health status (from 1 - very bad to 5 - very good).}
+#'   \item{\code{absences}}{integer. number of school absences (from 0 to 93).}
+#'   \item{\code{G1}}{integer.  first period grade (from 0 to 20).}
+#'   \item{\code{G2}}{integer. second period grade (from 0 to 20).}
+#'   \item{\code{G3}}{integer. final grade (from 0 to 20, output target).}
+#' }
+#' @examples 
+#' summary(student)
+"student"

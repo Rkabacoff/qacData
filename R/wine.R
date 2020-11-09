@@ -1,0 +1,47 @@
+#'@title Wine reviews
+#'
+#'@description
+#'A data frame containing wine reviews for wines made in the United 
+#'States, France, and Italy. 
+#'
+#'@docType data
+#'@keywords datasets
+#'@name wine
+#'@usage wine
+#'
+#'
+#'@format A data frame with 5,000 rows and 13 variables
+#'The variables are as follows:
+#'\describe{
+#'    \item{id}{a unique identifier}
+#'    \item{country}{country that the wine is from}
+#'    \item{description}{description of the wine, written by the taster}
+#'    \item{designation}{vineyard within the winery where the wine is from}
+#'    \item{points}{number of points the wine was rated on a scale of 1 - 100}
+#'    \item{price}{cost of the bottle of wine($)}
+#'    \item{province}{the province or state that the wine is from}
+#'    \item{region}{the wine growing area within the province or state}
+#'    \item{taster_name}{name of the reviewer}
+#'    \item{taster_twitter_handle}{twitter handle of the reviewer}
+#'    \item{title}{title of the wine review; contains the vintage of the wine}
+#'    \item{variety}{type of grape used to make the wine}
+#'    \item{winery}{winery where the wine was produced}
+#'}
+#' @note This is a good dataset for both quantitative and text mining.
+#'
+#' @source The full data set can be found on Kaggle 
+#' \href{https://www.kaggle.com/zynicide/wine-reviews}{https://www.kaggle.com/zynicide/wine-reviews}
+#' @examples
+#' summary(wine)
+#' 
+#' table(wine$points)
+#' 
+#' hist(wine$points)
+#' 
+#' plot(wine$points, wine$price, 
+#'      main = "Wine Prices by Score", 
+#'      xlab = "Score (1-100)", 
+#'      ylab = "Price ($)")
+#'  
+#' wine[1, ]
+NULL

@@ -1,0 +1,45 @@
+#' @title Google Play Store Apps
+#'
+#' @description A data frame containing all the details of the applications on Google Play.
+#' There are 13 features that describe a given app. 
+#'
+#' @details Lavanya Gupta created a public dataset on Kaggle about Google Play Store applications.
+#' The information in the dataset was scraped from the Google Play Store. 
+#' Because there are apps always being added or removed from Google Play Store, Gupta has modified this dataset over time. 
+#' This dataset is the most recent version, Version 5, and was uploaded by Gupta to Kaggle on September 2018.
+#'
+#' @note The dataset has some challenges for students. 
+#' For example, the size variable needs to be converted to a standard numeric unit. The genres field can contain
+#' more than one value seperated by semicolons. The number of installs needs to be converted to an
+#' ordinal factor. The type factor has an NaN value.
+#' 
+#' @docType data
+#' @keywords datasets
+#' @name  googleplay
+#' @usage googleplay
+#'
+#' @format A data frame with 10,842 rows and 13 variables
+#' The variables are as follows:
+#' \describe{
+#'    \item{app}{application name}
+#'    \item{category}{category the app belongs to ss}
+#'    \item{rating}{overall user rating of the app}
+#'    \item{reviews}{number of user reviews for the app}
+#'    \item{size}{size of the app}
+#'    \item{installs}{number of user downloads/installs for the app}
+#'    \item{type}{paid or free}
+#'    \item{price}{price of the app}
+#'    \item{content_rating}{age group the app is targeted at}
+#'    \item{genres}{an app can belong to multiple genres apart from its main category}
+#'    \item{last_updated}{date when the app was last updated on play store}
+#'    \item{current_ver}{current version of the app available on play store}
+#'    \item{android_ver}{min required android version}
+#' }
+#'
+#' @source The data is from Kaggle. Lavanya Gupta created the Google Play Store Apps on Kaggle. 
+#' \href{https://www.kaggle.com/lava18/google-play-store-apps}{https://www.kaggle.com/lava18/google-play-store-apps}
+#' @examples 
+#' summary(googleplay)
+#' 
+#' table(googleplay$category,googleplay$type)
+NULL

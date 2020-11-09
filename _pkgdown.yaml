@@ -1,0 +1,34 @@
+title: qacData
+url: http://rkabacoff.github.io/qacD
+template:
+  params:
+    bootswatch: cerulean
+reference:
+  - title: Datasets
+    desc: ~
+    contents:
+      - '`amazon`'
+      - '`appointments`'
+      - '`batting`'
+      - '`border`'
+      - '`breast`'
+      - '`cardata`'
+      - '`cars74`'
+      - '`coffee`'
+      - '`contraception`'
+      - '`countries`'
+      - '`crashes`'
+      - '`farmers_markets`'
+      - '`googleplay`'
+      - '`hostels`'
+      - '`hate_crimes`'
+      - '`housing`'
+      - '`insurance`'      
+      - '`movies`'
+      - '`oil`'
+      - '`pbp2018`'
+      - '`soils`'
+      - '`student`'
+      - '`tv`'
+      - '`venues`'
+      - '`wine`'

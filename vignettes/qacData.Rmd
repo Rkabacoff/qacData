@@ -1,0 +1,25 @@
+---
+title: "Data for Learning"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Data for Learning}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+![](ball.png)
+
+# Overview
+
+The **qacData** package contains a collection of data sets that are useful for teaching statistics and data science. They have been obtained from various sites on the internet and crafted into R data frames by students in the course *QAC 356 - Advanced R programming* at [Wesleyan University](http://www.wesleyan.edu).
+
+The data sets can be used to teach descriptive statistics, data visualization, multivariate statistics, and text mining. Our goal was to find data sets that were large and varied enough to be interesting, but small enough to be analyzed easily on a laptop.
+
+**Suggestions and comments are welcome!**

@@ -1,0 +1,243 @@
+#' @title CIA World Factbook 
+#'
+#' @description
+#' Demographic and economic data on 197 countries in 2020.
+#' 
+#' @format A data frame with 197 rows and 79 variables:
+#' \describe{
+#'   \item{\code{Country.Name}}{(character)}
+#'   \item{\code{Country.Code}}{2 letter ISO Code.}
+#'   \item{\code{Government.Type}}{(character) Basic form of government.}
+#'   \item{\code{Date.of.Founding.Independence}}{(Date) yyy-mm-dd}
+#'   \item{\code{Latitude.of.Capital}}{(character) e.g. "69 11 E"}
+#'   \item{\code{Longitude.of.Capital}}{(character) e.g. "34 31 N"}
+#'   \item{\code{Telephones.fixed.lines}}{
+#'   Total number of fixed telephone lines in use.}
+#'   \item{\code{Telephones.mobile.cellular}}{
+#'   Total number of mobile cellular telephone subscribers.}
+#'   \item{\code{Internet.users}}{ 
+#'   Total number of individuals within a country who can access the 
+#'   Internet at home.}
+#'   \item{\code{Broadband.fixed.subscriptions}}{ 
+#'   Total number of fixed-broadband subscriptions.}
+#'   \item{\code{GDP.purchasing.power.parity}}{
+#'   This entry gives the gross domestic product (GDP) or value of all final goods and services 
+#'   produced within a nation in a given year. A nation's GDP at purchasing 
+#'   power parity (PPP) exchange rates is the sum value of all goods and 
+#'   services produced in the country valued at prices prevailing in the 
+#'   United States in the year noted. This is the measure most economists 
+#'   prefer when looking at per-capita welfare and when comparing living 
+#'   conditions or use of resources across countries. }
+#'   \item{\code{GDP.real.growth.rate}}{ 
+#'   GDP growth on an annual basis adjusted for inflation and 
+#'   expressed as a percent.}
+#'   \item{\code{GDP.per.capita.PPP}}{
+#'   GDP on a purchasing power parity basis divided by population as 
+#'   of 1 July for the same year.}
+#'   \item{\code{Gross.national.saving}}{ 
+#'   Gross national saving is derived by deducting final consumption 
+#'   expenditure (household plus government) from Gross national 
+#'   disposable income.Expressed as percent of GDP. A negative number 
+#'   indicates that the economy as a whole is spending 
+#'   more income than it produces.}
+#'   \item{\code{Industrial.production.growth.rate}}{ 
+#'   Annual percentage increase in industrial production.}
+#'   \item{\code{Labor.force}}{ Total labor force.}
+#'   \item{\code{Unemployment.rate}}{ Percent of the labor force 
+#'   that is without jobs.}
+#'   \item{\code{Distribution.of.family.income.Gini.index}}{}
+#'   \item{\code{Taxes.and.other.revenues}}{ 
+#'   Total taxes and other revenues received by the national government 
+#'   as a percent of GDP.}
+#'   \item{\code{Budget.surplus.or.deficit}}{ Difference between 
+#'   national government revenues and expenditures, expressed as a percent 
+#'   of GDP.}
+#'   \item{\code{Public.debt}}{ Total of all government borrowings 
+#'   less repayments that are denominated in a country's home currency.}
+#'   \item{\code{Inflation.rate.consumer.prices}}{ 
+#'   Annual percent change in consumer prices compared with the previous 
+#'   year's consumer prices.}
+#'   \item{\code{Central.bank.discount.rate}}{
+#'   Annualized interest rate a country's central bank charges commercial, 
+#'   depository banks for loans to meet temporary shortages of funds.}
+#'   \item{\code{Commercial.bank.prime.lending.rate}}{
+#'    Simple average of annualized interest rates commercial banks 
+#'    charge on new loans, denominated in the national currency, 
+#'    to their most credit-worthy customers.}
+#'   \item{\code{Stock.of.narrow.money}}{ 
+#'   Compares the total quantity of currency in circulation 
+#'   (notes and coins) plus demand deposits denominated in the 
+#'   national currency, held by nonbank financial institutions, 
+#'   state and local governments, nonfinancial public enterprises, 
+#'   and the private sector of the economy. The national currency 
+#'   units have been converted to US dollars.}
+#'   \item{\code{Stock.of.broad.money}}{ 
+#'   All of \code{Narrow money}, plus the total quantity of 
+#'   time and savings deposits, credit union deposits, 
+#'   institutional money market funds, short-term repurchase 
+#'   agreements between the central bank and commercial 
+#'   deposit banks, and other large liquid assets held by
+#'   nonbank financial institutions, state and local governments, 
+#'   nonfinancial public enterprises, and the private sector 
+#'   of the economy. National currency units have been converted 
+#'   to US dollars.}
+#'   \item{\code{Stock.of.domestic.credit}}{
+#'   Total quantity of credit, denominated in the domestic currency, 
+#'   provided by financial institutions to the central bank, 
+#'   state and local governments, public non-financial corporations, 
+#'   and the private sector. The national currency units have been 
+#'   converted to US dollars. }
+#'   \item{\code{Market.value.of.publicly.traded.shares}}{
+#'   The latest price per share multiplied by the total number of 
+#'   outstanding shares, cumulated over all companies listed on the 
+#'   particular exchange.}
+#'   \item{\code{Current.account.balance}}{ 
+#'   Compares a country's net trade in goods and services, 
+#'   plus net earnings, and net transfer payments to and 
+#'   from the rest of the world during the period specified.}
+#'   \item{\code{Exports}}{Total US dollar amount of merchandise 
+#'   exports on an f.o.b. (free on board) basis.}
+#'   \item{\code{Imports}}{ Total US dollar amount of merchandise 
+#'   imports on a c.i.f. (cost, insurance, and freight) or f.o.b. 
+#'   (free on board) basis.}
+#'   \item{\code{Reserves.of.foreign.exchange.and.gold}}{ 
+#'   Dollar value for the stock of all financial assets that are 
+#'   available to the central monetary authority for use in 
+#'   meeting a country's balance of payments.}
+#'   \item{\code{Debt.external}}{ Total public and private 
+#'   debt owed to nonresidents repayable in internationally 
+#'   accepted currencies, goods, or services.}
+#'   \item{\code{Stock.of.direct.foreign.investment.at.home}}{
+#'   Cumulative US dollar value of all investments 
+#'   in the home country made directly by residents - primarily companies - 
+#'   of other countries.}
+#'   \item{\code{Stock.of.direct.foreign.investment.abroad}}{
+#'   Cumulative US dollar value of all investments in foreign countries 
+#'   made directly by residents - primarily companies - of the home country.}
+#'   \item{\code{Electricity.production}}{
+#'   Annual electricity generated expressed in kilowatt-hours.}
+#'   \item{\code{Electricity.consumption}}{ Total electricity generated 
+#'   annually plus imports and minus exports, expressed in kilowatt-hours.}
+#'   \item{\code{Electricity.exports}}{
+#'   Total exported electricity in kilowatt-hours.}
+#'   \item{\code{Electricity.imports}}{
+#'   Total imported electricity in kilowatt-hours.}
+#'   \item{\code{Electricity.installed.generating.capacity}}{}
+#'   \item{\code{Electricity.from.fossil.fuels}}{
+#'   Capacity of plants that generate electricity by burning fossil 
+#'   fuels (such as coal, petroleum products, and natural gas), 
+#'   expressed as a share of the country's total generating capacity}
+#'   \item{\code{Electricity.from.nuclear.fuels}}{
+#'   Capacity of plants that generate electricity through 
+#'   radioactive decay of nuclear fuel, expressed as a share 
+#'   of the country's total generating capacity}
+#'   \item{\code{Electricity.from.hydroelectric.plants}}{
+#'   Capacity of plants that generate electricity by water-driven
+#'   turbines, expressed as a share of the country's total 
+#'   generating capacity}
+#'   \item{\code{Electricity.from.other.renewable.sources}}{
+#'   Capacity of plants that generate electricity by using renewable 
+#'   energy sources other than hydroelectric (including, for example, 
+#'   wind, waves, solar, and geothermal), expressed as a share of the 
+#'   country's total generating capacity.}
+#'   \item{\code{Crude.oil.production}}{
+#'   Crude oil produced, in barrels per day.}
+#'   \item{\code{Crude.oil.exports}}{
+#'   Total amount of crude oil exported, in barrels per day.}
+#'   \item{\code{Crude.oil.imports}}{ 
+#'   Total amount of crude oil imported, in barrels per day.}
+#'   \item{\code{Crude.oil.proved.reserves}}{
+#'   Barrels of petroleum which can be estimated to be commercially 
+#'   recoverable from a given date forward, from known reservoirs and under 
+#'   current economic conditions.}
+#'   \item{\code{Refined.petroleum.products.production}}{
+#'   Total output of refined petroleum products, in barrels per day. }
+#'   \item{\code{Refined.petroleum.products.consumption}}{
+#'   Total consumption of refined petroleum products, in barrels per day.}
+#'   \item{\code{Refined.petroleum.products.exports}}{
+#'   Total exports of refined petroleum products, in barrels per day.}
+#'   \item{\code{Refined.petroleum.products.imports}}{
+#'   Total imports of refined petroleum products, in barrels per day.}
+#'   \item{\code{Natural.gas.production}}{
+#'   Total natural gas produced in cubic meters.}
+#'   \item{\code{Natural.gas.consumption}}{
+#'   Total natural gas consumed in cubic meters.}
+#'   \item{\code{Natural.gas.exports}}{
+#'    Total natural gas exported in cubic meters.}
+#'   \item{\code{Natural.gas.imports}}{
+#'   Total natural gas imported in cubic meters.}
+#'   \item{\code{Natural.gas.proved.reserves}}{
+#'   The quantities of natural gas in cubic meters, which can be estimated 
+#'   to be commercially recoverable from a given date forward, 
+#'   from known reservoirs and under current economic conditions.}
+#'   \item{\code{Carbon.dioxide.emissions.from.consumption.of.energy}}{
+#'   Total amount of carbon dioxide, measured in metric tons, 
+#'   released by burning fossil fuels in the process of producing 
+#'   and consuming energy.}
+#'   \item{\code{Area}}{Sum of all land and water areas delimited 
+#'   by international boundaries and/or coastlines.}
+#'   \item{\code{Military.expenditures}}{
+#'   Spending on defense programs for the most recent year available 
+#'   as a percent of gross domestic product (GDP).}
+#'   \item{\code{Population}}{}
+#'   \item{\code{Median.age}}{}
+#'   \item{\code{Population.growth.rate}}{
+#'   Average annual percent change in the population, 
+#'   resulting from a surplus (or deficit) of births over deaths 
+#'   and the balance of migrants entering and leaving a country.}
+#'   \item{\code{Birth.rate}}{
+#'   Average annual number of births during a year per 1,000 persons.}
+#'   \item{\code{Death.rate}}{
+#'   Average annual number of deaths during a year per 1,000 population.}
+#'   \item{\code{Net.migration.rate}}{
+#'   Difference between the number of persons entering and leaving a 
+#'   country during the year per 1,000 persons}
+#'   \item{\code{Maternal.mortality.rate}}{
+#'   Annual number of female deaths per 100,000 live births 
+#'   from any cause related to or aggravated by pregnancy or 
+#'   its management.}
+#'   \item{\code{Infant.mortality.rate}}{
+#'  Number of deaths of infants under one year old in a given 
+#'  year per 1,000 live births. This rate is often used as an 
+#'  indicator of the level of health in a country.}
+#'   \item{\code{Life.expectancy.at.birth}}{
+#'  Average number of years to be lived by a group of people 
+#'  born in the same year, if mortality at each age remains 
+#'  constant in the future. Life expectancy at birth is also a 
+#'  measure of overall quality of life in a country.}
+#'   \item{\code{Total.fertility.rate}}{
+#'   Average number of children that would be born per woman 
+#'   if all women lived to the end of their childbearing years 
+#'   and bore children according to a given fertility rate at each age.}
+#'   \item{\code{Obesity.adult.prevalence.rate}}{
+#'   Percent of a country's population considered to be obese (BMI >=30).}
+#'   \item{\code{Children.under.the.age.of.5.years.underweight}}{
+#'   Percent of children under five considered to be underweight. 
+#'   This statistic is an indicator of the nutritional status of a community.}
+#'   \item{\code{Education.expenditures}}{}
+#'   \item{\code{Unemployment.youth.ages.15.24}}{
+#'   The public expenditure on education as a percent of GDP.}
+#'   \item{\code{Airports}}{
+#'   Total number of airports or airfields recognizable from the air.}
+#'   \item{\code{Railways}}{Total route length of the railway network.}
+#'   \item{\code{Roadways}}{
+#'   Total length of the road network and includes the length of the 
+#'   paved and unpaved portions.}
+#'   \item{\code{Merchant.marine}}{
+#'   Total number of privately or publicly owned commercial ships; military ships are not included.}
+#'   \item{\code{Capital}}{(character)Name of the seat of government.}
+#' }
+#' 
+#' @source 
+#' Gopal Remesh Dahale, Kaggle Country_data
+#' \url{https://www.kaggle.com/gopalrameshdahale/country-data?select=Country_data.csv}
+#'
+#' @details 
+#' Dataset originally from the \href{https://www.cia.gov/library/publications/resources/the-world-factbook/docs/rankorderguide.html}{CIA World Factbook }.
+#' Variable descriptions are quoted from this \href{https://www.cia.gov/library/publications/resources/the-world-factbook/docs/notesanddefs.html}{website}. 
+#' More detail can be found at these link.
+#' 
+#' @examples 
+#' summary(countries)
+#'
+"countries"
