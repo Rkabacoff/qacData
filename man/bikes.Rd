@@ -40,4 +40,7 @@ the Seoul Bike Sharing System with the corresponding Weather and
 holiday information. Date is recorded as a character variable. It is 
 a good dataset for feature engineering with dates.
 }
+\examples{
+summary(bikes)
+}
 \keyword{datasets}

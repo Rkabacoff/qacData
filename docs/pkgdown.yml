@@ -3,7 +3,7 @@ pkgdown: 1.6.1
 pkgdown_sha: ~
 articles:
   qacData: qacData.html
-last_built: 2022-01-02T17:08Z
+last_built: 2022-01-02T19:16Z
 urls:
   reference: http://rkabacoff.github.io/qacD/reference
   article: http://rkabacoff.github.io/qacD/articles
