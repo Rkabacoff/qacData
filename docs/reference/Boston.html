@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Medical Appointment No Shows — appointments • qacData</title>
+<title>Housing Values in Suburbs of Boston — Boston • qacData</title>
 
 
 <!-- jquery -->
@@ -39,8 +39,8 @@
 
 
 
-<meta property="og:title" content="Medical Appointment No Shows — appointments" />
-<meta property="og:description" content="Predicting no-show medical appointments" />
+<meta property="og:title" content="Housing Values in Suburbs of Boston — Boston" />
+<meta property="og:description" content="Housing Values in Suburbs of Boston" />
 
 
 
@@ -111,82 +111,85 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Medical Appointment No Shows</h1>
-    <small class="dont-index">Source: <a href='https://github.com/rkabacoff/qacData/blob/master/R/appointments.R'><code>R/appointments.R</code></a></small>
-    <div class="hidden name"><code>appointments.Rd</code></div>
+    <h1>Housing Values in Suburbs of Boston</h1>
+    <small class="dont-index">Source: <a href='https://github.com/rkabacoff/qacData/blob/master/R/Boston.R'><code>R/Boston.R</code></a></small>
+    <div class="hidden name"><code>Boston.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Predicting no-show medical appointments</p>
+    <p>Housing Values in Suburbs of Boston</p>
     </div>
 
-    <pre class="usage"><span class='va'>appointments</span></pre>
+    <pre class="usage"><span class='va'>Boston</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 110527 rows and 14 variables:</p><dl>
-  <dt><code>PatientId</code></dt><dd><p>double. Identification of a patient.</p></dd>
-  <dt><code>AppointmentID</code></dt><dd><p>double. dentification of each appointment.</p></dd>
-  <dt><code>Gender</code></dt><dd><p>factor. <code>Male, Female</code>.</p></dd>
-  <dt><code>ScheduledDay</code></dt><dd><p>datatime. The day and time of the actual appointment,
-  when they have to visit the doctor.</p></dd>
-  <dt><code>AppointmentDay</code></dt><dd><p>double. The day someone called or 
-  registered the appointment, this is before appointment of course.</p></dd>
-  <dt><code>Age</code></dt><dd><p>double. Age of the patient.</p></dd>
-  <dt><code>Neighbourhood</code></dt><dd><p>character. Where the appointment takes place.</p></dd>
-  <dt><code>Scholarship</code></dt><dd><p>integer. <code>0=FALSE, 1=TRUE</code>. Scholarship
-  is a social welfare program providing financial aid to poor Brazilian families.</p></dd>
-  <dt><code>Hypertension</code></dt><dd><p>integer. <code>0=FALSE, 1=TRUE</code>.</p></dd>
-  <dt><code>Diabetes</code></dt><dd><p>integer. <code>0=FALSE, 1=TRUE</code>.</p></dd>
-  <dt><code>Alcoholism</code></dt><dd><p>integer. <code>0=FALSE, 1=TRUE</code>.</p></dd>
-  <dt><code>Handcap</code></dt><dd><p>integer. <code>0=FALSE, 1=TRUE</code>.</p></dd>
-  <dt><code>SMS_received</code></dt><dd><p>integer. <code>0=FALSE, 1=TRUE</code>.
-  1 or more messages sent to the patient.</p></dd>
-  <dt><code>No_show</code></dt><dd><p>factor. <code>Yes, No.</code></p></dd>
+    <p>A data frame with 506 rows and 14 variables:</p><dl>
+  <dt><code>crim</code></dt><dd><p>per capita crime rate by town.</p></dd>
+  <dt><code>zn</code></dt><dd><p>proportion of residential land zoned for lots over 25,000 sq.ft.</p></dd>
+  <dt><code>indus</code></dt><dd><p>proportion of non-retail business acres per town.</p></dd>
+  <dt><code>chas</code></dt><dd><p>Charles River dummy variable (= 1 if tract bounds river; 0 otherwise).</p></dd>
+  <dt><code>nox</code></dt><dd><p>nitrogen oxides concentration (parts per 10 million).</p></dd>
+  <dt><code>rm</code></dt><dd><p>average number of rooms per dwelling.</p></dd>
+  <dt><code>age</code></dt><dd><p>proportion of owner-occupied units built prior to 1940.</p></dd>
+  <dt><code>dis</code></dt><dd><p>weighted mean of distances to five Boston employment centres.</p></dd>
+  <dt><code>rad</code></dt><dd><p>index of accessibility to radial highways.</p></dd>
+  <dt><code>tax</code></dt><dd><p>full-value property-tax rate per $10,000.</p></dd>
+  <dt><code>ptratio</code></dt><dd><p>pupil-teacher ratio by town.</p></dd>
+  <dt><code>black</code></dt><dd><p>proportion of blacks by town.</p></dd>
+  <dt><code>lstat</code></dt><dd><p>lower status of the population (percent).</p></dd>
+  <dt><code>medv</code></dt><dd><p>median value of owner-occupied homes in $1000s.</p></dd>
 
 </dl>
 
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
-    <p>Joni Hoppen, Kaggle Medical Appointment No Shows 
-<a href='https://www.kaggle.com/joniarroba/noshowappointments'>https://www.kaggle.com/joniarroba/noshowappointments</a>.</p>
+    <p>Harrison, D. and Rubinfeld, D.L. (1978) Hedonic prices and the demand for clean air. J. Environ. Economics and Management 5, 81–102.</p>
+<p>Belsley D.A., Kuh, E. and Welsch, R.E. (1980) 
+Regression Diagnostics. Identifying Influential Data and Sources of Collinearity. New York: Wiley.</p>
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>This Kaggle competition was designed to challenge participants to 
-predict office no-shows. It is also a good dataset to practice
-date and time manipulation.</p>
+    <p>The <code><a href='https://rdrr.io/pkg/MASS/man/Boston.html'>Boston</a></code> data frame was obtained from Venables and Ripley's <code>MASS</code> package.
+The data utilize census tracts in the Boston Standard Metropolitatn 
+Statistical Area in 1970. Two changes have been made from this original
+dataset. The dollar values for <code>tax</code> and 
+<code>medv</code> have been converted to 2020 US dollars (assuming a 299.4% 
+cumulative inflation rate). Additionally, the <code>black</code> variable has 
+been transformed from its original metric
+(1000*(proportion of blacks by town - 0.63)^2) to a simple the proportion 
+of blacks by town.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/summary.html'>summary</a></span><span class='op'>(</span><span class='va'>appointments</span><span class='op'>)</span>
-</div><div class='output co'>#&gt;    PatientId         AppointmentID        Gender     
-#&gt;  Min.   :3.920e+04   Min.   :5030230   Male  :71840  
-#&gt;  1st Qu.:4.173e+12   1st Qu.:5640286   Female:38687  
-#&gt;  Median :3.173e+13   Median :5680573                 
-#&gt;  Mean   :1.475e+14   Mean   :5675305                 
-#&gt;  3rd Qu.:9.439e+13   3rd Qu.:5725524                 
-#&gt;  Max.   :1.000e+15   Max.   :5790484                 
-#&gt;   ScheduledDay                 AppointmentDay                     Age        
-#&gt;  Min.   :2015-11-10 07:13:56   Min.   :2016-04-29 00:00:00   Min.   : -1.00  
-#&gt;  1st Qu.:2016-04-29 10:27:01   1st Qu.:2016-05-09 00:00:00   1st Qu.: 18.00  
-#&gt;  Median :2016-05-10 12:13:17   Median :2016-05-18 00:00:00   Median : 37.00  
-#&gt;  Mean   :2016-05-09 07:49:15   Mean   :2016-05-19 00:57:50   Mean   : 37.09  
-#&gt;  3rd Qu.:2016-05-20 11:18:37   3rd Qu.:2016-05-31 00:00:00   3rd Qu.: 55.00  
-#&gt;  Max.   :2016-06-08 20:07:23   Max.   :2016-06-08 00:00:00   Max.   :115.00  
-#&gt;  Neighbourhood       Scholarship         Diabetes         Alcoholism    
-#&gt;  Length:110527      Min.   :0.00000   Min.   :0.00000   Min.   :0.0000  
-#&gt;  Class :character   1st Qu.:0.00000   1st Qu.:0.00000   1st Qu.:0.0000  
-#&gt;  Mode  :character   Median :0.00000   Median :0.00000   Median :0.0000  
-#&gt;                     Mean   :0.09827   Mean   :0.07186   Mean   :0.0304  
-#&gt;                     3rd Qu.:0.00000   3rd Qu.:0.00000   3rd Qu.:0.0000  
-#&gt;                     Max.   :1.00000   Max.   :1.00000   Max.   :1.0000  
-#&gt;     Handcap         SMS_received   No_show      Hypertension   
-#&gt;  Min.   :0.00000   Min.   :0.000   No :88208   Min.   :0.0000  
-#&gt;  1st Qu.:0.00000   1st Qu.:0.000   Yes:22319   1st Qu.:0.0000  
-#&gt;  Median :0.00000   Median :0.000               Median :0.0000  
-#&gt;  Mean   :0.02225   Mean   :0.321               Mean   :0.1972  
-#&gt;  3rd Qu.:0.00000   3rd Qu.:1.000               3rd Qu.:0.0000  
-#&gt;  Max.   :4.00000   Max.   :1.000               Max.   :1.0000  </div></pre>
+    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/summary.html'>summary</a></span><span class='op'>(</span><span class='va'>Boston</span><span class='op'>)</span>
+</div><div class='output co'>#&gt;       crim                zn             indus            chas        
+#&gt;  Min.   : 0.00632   Min.   :  0.00   Min.   : 0.46   Min.   :0.00000  
+#&gt;  1st Qu.: 0.08205   1st Qu.:  0.00   1st Qu.: 5.19   1st Qu.:0.00000  
+#&gt;  Median : 0.25651   Median :  0.00   Median : 9.69   Median :0.00000  
+#&gt;  Mean   : 3.61352   Mean   : 11.36   Mean   :11.14   Mean   :0.06917  
+#&gt;  3rd Qu.: 3.67708   3rd Qu.: 12.50   3rd Qu.:18.10   3rd Qu.:0.00000  
+#&gt;  Max.   :88.97620   Max.   :100.00   Max.   :27.74   Max.   :1.00000  
+#&gt;       nox               rm             age              dis        
+#&gt;  Min.   :0.3850   Min.   :3.561   Min.   :  2.90   Min.   : 1.130  
+#&gt;  1st Qu.:0.4490   1st Qu.:5.886   1st Qu.: 45.02   1st Qu.: 2.100  
+#&gt;  Median :0.5380   Median :6.208   Median : 77.50   Median : 3.207  
+#&gt;  Mean   :0.5547   Mean   :6.285   Mean   : 68.57   Mean   : 3.795  
+#&gt;  3rd Qu.:0.6240   3rd Qu.:6.623   3rd Qu.: 94.08   3rd Qu.: 5.188  
+#&gt;  Max.   :0.8710   Max.   :8.780   Max.   :100.00   Max.   :12.127  
+#&gt;       rad              tax            ptratio          black       
+#&gt;  Min.   : 1.000   Min.   : 746.1   Min.   :12.60   Min.   :0.6479  
+#&gt;  1st Qu.: 4.000   1st Qu.:1113.2   1st Qu.:17.40   1st Qu.:1.2427  
+#&gt;  Median : 5.000   Median :1316.7   Median :19.05   Median :1.2557  
+#&gt;  Mean   : 9.549   Mean   :1628.9   Mean   :18.46   Mean   :1.2163  
+#&gt;  3rd Qu.:24.000   3rd Qu.:2657.3   3rd Qu.:20.20   3rd Qu.:1.2595  
+#&gt;  Max.   :24.000   Max.   :2836.9   Max.   :22.00   Max.   :1.2600  
+#&gt;      lstat            medv       
+#&gt;  Min.   : 1.73   Min.   : 19.95  
+#&gt;  1st Qu.: 6.95   1st Qu.: 67.93  
+#&gt;  Median :11.36   Median : 84.59  
+#&gt;  Mean   :12.65   Mean   : 89.91  
+#&gt;  3rd Qu.:16.95   3rd Qu.: 99.75  
+#&gt;  Max.   :37.97   Max.   :199.50  </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">

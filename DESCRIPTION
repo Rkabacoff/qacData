@@ -1,9 +1,9 @@
 Package: qacData
 Title: Datasets for Data Science Instruction
-Version: 0.0.1.0
+Version: 1.0.0
 Authors@R: 
-    person(given = "QAC",
-           family = "356",
+    person(given = "Robert",
+           family = "Kabacoff",
            role = c("aut", "cre"),
            email = "rkabacoff@wesleyan.edu")
 Description: This package provides data sets that can be used to illustrate
@@ -12,7 +12,8 @@ Depends: R (>= 3.5.0)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.1.1
+LazyDataCompression: xz
+RoxygenNote: 7.1.2
 Suggests: 
     knitr,
     rmarkdown

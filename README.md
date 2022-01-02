@@ -6,7 +6,7 @@
 <!-- badges: end -->
 
 The  **qacData** package provides a range of interesting data sets for
-data science instruction. This is a companion package for **[qacr](http://rkabacoff.github.io/qacr)**, a package of useful functions for exploratory data analysis.
+data science instruction.
 
 Why **qacData**? This package is created and maintained by advanced undergradutes in the [Quantitative Analysis Center](http://qac.wesleyan.edu) (QAC) at Wesleyan University. 
 

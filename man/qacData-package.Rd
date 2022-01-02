@@ -18,7 +18,7 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: QAC 356 \email{rkabacoff@wesleyan.edu}
+\strong{Maintainer}: Robert Kabacoff \email{rkabacoff@wesleyan.edu}
 
 }
 \keyword{internal}
