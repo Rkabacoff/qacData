@@ -40,7 +40,3 @@ This is a good dataset to explore mapping.
 \examples{
 summary(hostels)
 }
-\keyword{datasets,}
-\keyword{hostels,}
-\keyword{japan,}
-\keyword{reviews}

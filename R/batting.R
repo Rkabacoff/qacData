@@ -63,7 +63,7 @@
 #' 
 #' @source 
 #' Lahman, S. (2010) Lahman's Baseball Database, 1871-2012, 2012 version, 
-#' \href{http://baseball1.com/statistics/}{http://baseball1.com/statistics/}.
+#' \href{http://www.seanlahman.com/baseball-archive/statistics/}{http://www.seanlahman.com/baseball-archive/statistics/}.
 #' 
 #' @examples
 #' summary(batting)

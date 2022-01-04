@@ -233,8 +233,8 @@
 #' \url{https://www.kaggle.com/gopalrameshdahale/country-data?select=Country_data.csv}
 #'
 #' @details 
-#' Dataset originally from the \href{https://www.cia.gov/library/publications/resources/the-world-factbook/docs/rankorderguide.html}{CIA World Factbook }.
-#' Variable descriptions are quoted from this \href{https://www.cia.gov/library/publications/resources/the-world-factbook/docs/notesanddefs.html}{website}. 
+#' Dataset originally from the \href{https://www.cia.gov/the-world-factbook/}{CIA World Factbook}.
+#' Variable descriptions are quoted from this \href{https://www.cia.gov/the-world-factbook/references/definitions-and-notes/}{website}. 
 #' More detail can be found at these link.
 #' 
 #' @examples 

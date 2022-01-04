@@ -6,7 +6,7 @@
 \alias{qacData-package}
 \title{qacData: Datasets for Data Science Instruction}
 \description{
-This package provides data sets that can be used to illustrate data science techniques.
+Provides data sets that can be used to illustrate data science techniques.
 }
 \seealso{
 Useful links:

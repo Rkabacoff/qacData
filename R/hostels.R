@@ -4,7 +4,6 @@
 #' The data contains information and ratings of 342 hostels in Japan
 #' 
 #' @docType data
-#' @keywords datasets, hostels, japan, reviews
 #' @name hostels
 #' @usage hostels
 #' 

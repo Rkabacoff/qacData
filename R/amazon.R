@@ -13,7 +13,7 @@
 #' @docType data
 #' @keywords datasets
 #' @name amazon
-#' @source \href{http://dados.gov.br/dataset/sistema-nacional-de-informacoes-florestais-snif}{Sistema Nacional de Informacoes Florestais}
+#' @source \href{https://dados.gov.br/dataset/sistema-nacional-de-informacoes-florestais-snif}{Sistema Nacional de Informacoes Florestais}
 #' @examples 
 #' summary(amazon)
 NULL

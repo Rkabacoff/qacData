@@ -5,7 +5,6 @@
 #'Home prices in California in 1990 from the California Census.
 #'
 #'@docType data
-#'@keywords california, dataset, 1990, census
 #'@name housing
 #'@usage housing
 #'

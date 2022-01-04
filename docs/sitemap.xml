@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://rkabacoff.github.io/qacD/404.html</loc>
+  </url>
+  <url>
+    <loc>http://rkabacoff.github.io/qacD/articles/index.html</loc>
+  </url>
+  <url>
+    <loc>http://rkabacoff.github.io/qacD/articles/qacData.html</loc>
+  </url>
+  <url>
+    <loc>http://rkabacoff.github.io/qacD/authors.html</loc>
+  </url>
+  <url>
     <loc>http://rkabacoff.github.io/qacD/index.html</loc>
+  </url>
+  <url>
+    <loc>http://rkabacoff.github.io/qacD/LICENSE-text.html</loc>
+  </url>
+  <url>
+    <loc>http://rkabacoff.github.io/qacD/LICENSE.html</loc>
   </url>
   <url>
     <loc>http://rkabacoff.github.io/qacD/reference/amazon.html</loc>
@@ -17,6 +35,9 @@
   </url>
   <url>
     <loc>http://rkabacoff.github.io/qacD/reference/bikes.html</loc>
+  </url>
+  <url>
+    <loc>http://rkabacoff.github.io/qacD/reference/border.html</loc>
   </url>
   <url>
     <loc>http://rkabacoff.github.io/qacD/reference/Boston.html</loc>
@@ -64,10 +85,25 @@
     <loc>http://rkabacoff.github.io/qacD/reference/housing.html</loc>
   </url>
   <url>
+    <loc>http://rkabacoff.github.io/qacD/reference/index.html</loc>
+  </url>
+  <url>
     <loc>http://rkabacoff.github.io/qacD/reference/insurance.html</loc>
   </url>
   <url>
+    <loc>http://rkabacoff.github.io/qacD/reference/movies.html</loc>
+  </url>
+  <url>
+    <loc>http://rkabacoff.github.io/qacD/reference/oil.html</loc>
+  </url>
+  <url>
+    <loc>http://rkabacoff.github.io/qacD/reference/pbp2018.html</loc>
+  </url>
+  <url>
     <loc>http://rkabacoff.github.io/qacD/reference/qacData-package.html</loc>
+  </url>
+  <url>
+    <loc>http://rkabacoff.github.io/qacD/reference/soils.html</loc>
   </url>
   <url>
     <loc>http://rkabacoff.github.io/qacD/reference/student.html</loc>
@@ -80,8 +116,5 @@
   </url>
   <url>
     <loc>http://rkabacoff.github.io/qacD/reference/wine.html</loc>
-  </url>
-  <url>
-    <loc>http://rkabacoff.github.io/qacD/articles/qacData.html</loc>
   </url>
 </urlset>

@@ -35,7 +35,3 @@ summary(housing)
 table(housing$ocean_proximity)
 sum(is.na(housing$total_bedrooms))
 }
-\keyword{1990,}
-\keyword{california,}
-\keyword{census}
-\keyword{dataset,}

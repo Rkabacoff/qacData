@@ -8,7 +8,7 @@
 The  **qacData** package provides a range of interesting data sets for
 data science instruction.
 
-Why **qacData**? This package is created and maintained by advanced undergradutes in the [Quantitative Analysis Center](http://qac.wesleyan.edu) (QAC) at Wesleyan University. 
+Why **qacData**? This package is created and maintained by advanced undergradutes in the [Quantitative Analysis Center](https://www.wesleyan.edu/qac/) (QAC) at Wesleyan University. 
 
 ## Installation
 

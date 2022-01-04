@@ -16,7 +16,7 @@ A data frame with 6454 rows and 5 variables:
 }
 }
 \source{
-\href{http://dados.gov.br/dataset/sistema-nacional-de-informacoes-florestais-snif}{Sistema Nacional de Informacoes Florestais}
+\href{https://dados.gov.br/dataset/sistema-nacional-de-informacoes-florestais-snif}{Sistema Nacional de Informacoes Florestais}
 }
 \description{
 This dataset reports the number of forest fires in Brazil per state.
