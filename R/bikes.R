@@ -1,14 +1,14 @@
 #' @title Seoul Bike Sharing Demand
 #'
 #' @details
-#' The dataset contains the number of public bikes rented at each hour from 
+#' The data set contains the number of public bikes rented at each hour from 
 #' the Seoul Bike Sharing System with the corresponding Weather and
 #' holiday information. Date is recorded as a character variable. It is 
-#' a good dataset for feature engineering with dates.
+#' a good data set for feature engineering with dates.
 #'
 #' @format A data frame with 8760 rows and 14 variables:
 #' \describe{
-#'   \item{\code{Date}}{mm/dd/yyyy.}
+#'   \item{\code{Date}}{dd/mmm/yyyy.}
 #'   \item{\code{Rented}}{count of bikes rented at each hour.}
 #'   \item{\code{Hour}}{hour of he day.}
 #'   \item{\code{Temp}}{temperature in Celsius.}
